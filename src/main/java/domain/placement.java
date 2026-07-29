@@ -1,29 +1,28 @@
 package domain;
 
 import java.time.Instant;
-import java.util.Objects;
 
-    public final class placement {
+public final class placement {
         private final long id;
-        private final long sampleId;
-        private final long containerId;
-        private final long slotId;
+        private final long containerID;
+        private final long slotID;
+        private final long sampleID;
         private final Instant placedAt;
         private String ownerUsername;
 
-        public placement(long id, long sampleId, long containerId, long slotId, String ownerUsername) {
+        public placement(long id, long sampleID, long containerID, long slotId, String ownerUsername) {
             this.id = id;
-            this.sampleId = sampleId;
-            this.containerId = containerId;
-            this.slotId = slotId;
+            this.containerID = containerID;
+            this.slotID = slotId;
+            this.sampleID = sampleID;
             this.placedAt = Instant.now();
             this.ownerUsername = ownerUsername;
         }
 
-        public long getId() { return id; }
-        public long getSampleId() { return sampleId; }
-        public long getContainerId() { return containerId; }
-        public long getSlotId() { return slotId; }
+        public long getID() { return id; }
+        public long getContainerID() { return containerID; }
+        public long getSlotID() { return slotID; }
+    public long getSampleID(){return sampleID;}
         public Instant getPlacedAt() { return placedAt; }
         public String getOwnerUsername() { return ownerUsername; }
 

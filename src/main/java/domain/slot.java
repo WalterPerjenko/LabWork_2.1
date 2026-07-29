@@ -52,4 +52,5 @@ public class slot {
     public int hashCode() {
         return Long.hashCode(id);
     }
+
 }

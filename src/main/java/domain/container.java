@@ -19,7 +19,7 @@ public final class container {
             this.updatedAt = this.createdAt;
         }
 
-        // Getters & Setters
+
         public long getId() { return id; }
         public String getName() { return name; }
         public void setName(String name) { this.name = name; this.updatedAt = Instant.now(); }
